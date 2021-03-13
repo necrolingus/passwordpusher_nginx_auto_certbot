@@ -17,6 +17,10 @@ https://github.com/wmnnd
 The bash command under certbot is so that certbot will check every 12 hours if the cert is up for renewal.  
 The bash command under nginx is so that nginx will reload its config every 6 hours in case a cert did get renewed.  
 
+### nginx config file notes
+include /etc/letsencrypt/options-ssl-nginx.conf;  The bash file grabs best practice for nginx that is why we load it  
+ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;  Good practice for Diffie Helman key exchange. Read more here if you want to https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters
+
 
 
 
