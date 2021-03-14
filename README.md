@@ -8,7 +8,7 @@ https://github.com/pglombardo/PasswordPusher
 
 ### Below I will sum up what they said
 1. I want this website to run on ppusher.leighonline.net, so I set up the A record on Cloudflare to point to my server IP address so long  
-2. In data/nginx/app.conf replace ppusher.leighonline.net with your own domain name. Do not replace the proxy_pass domain name. If you want to, make sure it is a working domain name otherwise the domain validaion will fail.  
+2. In data/nginx/app.conf replace ppusher.leighonline.net with your own domain name. Do not replace the proxy_pass domain name. If you want to, make sure it is a working domain name otherwise the domain validaion will fail. Once we have our initial cert, we can change it to whatever it needs to be.  
 3. In the init-letsenrcypt.sh remember to add your email address otherwise verfication might also fail.  
 4. Now chmod +x init.letsencrypt.sh and then ./init-letsencrypt.sh  
 5. This cool file that wmnd created will create a dummy SSL cert (otherwise nginx cannot start up because we told it to use SSL but we dont have certs yet) and then it will also start up your docker-compose. Very nice.  
