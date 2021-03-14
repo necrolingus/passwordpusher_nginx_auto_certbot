@@ -3,7 +3,8 @@ Auto renew letsencrypt certs and using nginx as a reverse proxy for password_pus
 
 ### All credit goes to:
 https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71  
-https://github.com/wmnnd
+https://github.com/wmnnd  
+https://github.com/pglombardo/PasswordPusher  
 
 ### Below I will sum up what they said
 1. I want this website to run on ppusher.leighonline.net, so I set up the A record on Cloudflare to point to my server IP address so long  
