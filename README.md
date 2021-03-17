@@ -6,6 +6,9 @@ https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-m
 https://github.com/wmnnd  
 https://github.com/pglombardo/PasswordPusher  
 
+### Docker Internal Network
+https://stackoverflow.com/questions/39913757/restrict-internet-access-docker-container  
+
 ### Below I will sum up what they said
 1. I want this website to run on ppusher.leighonline.net, so I set up the A record on Cloudflare to point to my server IP address so long  
 2. In data/nginx/app.conf replace ppusher.leighonline.net with your own domain name. Do not replace the proxy_pass domain name. If you want to, make sure it is a working domain name otherwise the domain validaion will fail. Once we have our initial cert, we can change it to whatever it needs to be.  
