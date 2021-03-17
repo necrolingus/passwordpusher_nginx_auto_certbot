@@ -10,12 +10,13 @@ https://github.com/pglombardo/PasswordPusher
 https://stackoverflow.com/questions/39913757/restrict-internet-access-docker-container  
 
 ### Below I will sum up what they said
-1. I want this website to run on ppusher.leighonline.net, so I set up the A record on Cloudflare to point to my server IP address so long  
+1. I want this website to run on ppusher.leighonline.net, so I set up the A record on Cloudflare to point to my server IP address so long. Dont enable the cloud icon for now.  
 2. In data/nginx/app.conf replace ppusher.leighonline.net with your own domain name. You will find initial.conf in the data/nginx/ folder that must be used when you initially get a cert otherwise it might fail.  
 3. Do not replace the proxy_pass domain name. If you want to, make sure it is a working domain name otherwise the domain validaion will fail. Once we have our initial cert, we can change it to whatever it needs to be.  
 4. In the init-letsenrcypt.sh remember to add your email address otherwise verfication might also fail.  
 5. Now chmod +x init.letsencrypt.sh and then ./init-letsencrypt.sh  
 6. This cool file that wmnd created will create a dummy SSL cert (otherwise nginx cannot start up because we told it to use SSL but we dont have certs yet) and then it will also start up your docker-compose. Very nice.  
+7. Remember to enable your cloudflare cloud icon now.  
 
 ### Take note
 The bash command under certbot is so that certbot will check every 12 hours if the cert is up for renewal.  
