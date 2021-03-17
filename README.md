@@ -29,7 +29,8 @@ ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;  Good practice for Diffie Helman 
 
 ## How to run this?
 The very first time, run ./init-letsencrypt.sh so that it can create the dummy cert and request your actual cert.  
-After this, you can use normal docker-compose to up and down your stack.  
+Remember to use the initial.conf nginx config file.  
+After this, you can use normal docker-compose to up and down your stack and you can use your actual nginx app.conf file.  
 
 
 
