@@ -25,6 +25,9 @@ include /etc/letsencrypt/options-ssl-nginx.conf;  The bash file grabs best pract
 ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;  Good practice for Diffie Helman key exchange. Read more here if you want to https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters
 
 
+## How to run this?
+The very first time, run ./init-letsencrypt.sh so that it can create the dummy cert and request your actual cert.  
+After this, you can use normal docker-compose to up and down your stack.  
 
 
 
