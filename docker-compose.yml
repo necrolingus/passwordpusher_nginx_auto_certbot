@@ -35,7 +35,7 @@ services:
       - no-internet
     image: docker.io/pglombardo/pwpush-ephemeral:latest
     expose:
-      - "5000"
+      - "5100"
 
 networks:
   no-internet:
