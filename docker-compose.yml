@@ -33,6 +33,7 @@ services:
   passwordpusher:
     networks:
       - no-internet
+    restart: always
     image: docker.io/pglombardo/pwpush-ephemeral:latest
     expose:
       - "5100"
